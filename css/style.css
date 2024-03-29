@@ -1,19 +1,43 @@
-.menu {
-    background-color: grey;
-    /* width: 150px; */
-    display: flex;
+body {
+  background: linear-gradient(to bottom, red, blue);
 }
-.title {
-    margin-left: 30px;
-    text-transform: uppercase;
-    font-family: 'Imbue';
-    color: rgb(198, 206, 213);
+
+
+.menu {
+  background-color: grey;
+  width: 35px;
+  height: 400px;
+  display: flex;
+}
+.container {
+  overflow: hidden;
+  position: relative;
 }
 .menu-list {
-    
+  /* overflow: hidden; */
+  position: absolute;
+  left: -10px;
 }
 .menu-link {
-    text-decoration: none;
-    color: aliceblue;
-    text-transform: uppercase;
+  text-decoration: none;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+.menu-text {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 200px;
+  left: -45px;
+}
+.title-link {  
+  font-size: 20px;
+  transform: rotate(90deg);
+  text-transform: uppercase;
+  font-family: "Imbue";
+  color: rgb(198, 206, 213); 
+}
+.title-link:hover .container {
+  overflow: visible;
+  width: 400px;
 }
